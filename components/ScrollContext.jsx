@@ -1,5 +1,5 @@
 "use client";
-import Lenis from 'lenis'
+import Lenis from 'lenis';
 import { createContext,useContext,useEffect,useState } from 'react';
 
 const SmoothScrollerContext = createContext();
