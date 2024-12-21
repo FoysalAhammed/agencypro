@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+      <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script> 
       </Head>
       <body>
         <Main />
