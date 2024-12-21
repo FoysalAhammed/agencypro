@@ -20,7 +20,7 @@ const SeoSection = () => {
               <div class="lighning_img"><img src="/img/2(1).png"
               alt="" /></div>
               <div class="lighning_fast">
-                <h3>Lightnign-fast Loading Speed</h3>
+                <h3>Lightning-fast Loading Speed</h3>
                 <p>Fast loading is the key to win your sales.
                 Foysal has proved to be the fastest theme, with
                 great Performance and high score in popular speed
