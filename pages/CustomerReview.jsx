@@ -17,7 +17,7 @@ const CustomerReview = () => {
               <div class="support_team">
                 <img src="/img/profile01.webp" alt="" />
                 <div>
-                  <h3>Ahammed Musa</h3>
+                  <h3>Ahammed Foysal</h3>
                   <h4>5000 + Subscribers</h4>
                   <div class="support_stars">
                     <svg stroke="currentcolor" fill="currentcolor"
