@@ -247,14 +247,38 @@ export default function Home() {
 
   // #$#$#$#$#$#$#$#$#$#$#$##$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$$#$#$#$#$$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#
   //                                      BUTTON FUNCTION FOR SMOOTH SCROLL TO TOP
+         const [isVisible,setIsVisible] = useState(false);
 
+         useEffect(() => {
+         const handleScroll = () => {
+          if (window.scrollY > 300) {
+            setIsVisible(true);
+            
+          }else{
+            setIsVisible(false);
+          }
+         }
+          window.addEventListener("scroll",handleScroll);
+        
+           return () => {
+            window.removeEventListener("scroll",handleScroll);
+           }
+         }, [])
+
+         const scrollToTop = () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+         }
+         
   //                                              CODE  END
   // #$#$#$#$#$#$#$#$#$#$#$##$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$$#$#$#$#$$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#
   // #$#$#$#$#$#$#$#$#$#$#$##$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$$#$#$#$#$$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#
 
   return (
     <>
-      <div className="banner">
+      <div className="banner" id="#homebanner">
         <div className="section_inner">
           <div className="light_eff">
             <img
@@ -462,7 +486,7 @@ export default function Home() {
                   Demos</span></a>
                 </div>
                 <a className="g_btn_two" href=
-                "https://www.codingwebstudio.com/about/">
+                "#homebanner">
 
                  <FaOpencart/> Open Your Store</a>
               </div>

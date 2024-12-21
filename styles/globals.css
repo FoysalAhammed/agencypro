@@ -502,7 +502,7 @@ nav ul li a {
 }
 
 .section_inner {
-  padding-top: 168px
+  padding-top: 50px
 }
 
 .banner .light_eff {
@@ -3305,21 +3305,7 @@ nav ul li a {
       margin-top: 10px
   }
 
-  .pricing_plan_table table tbody tr td {
-      min-width: 250px
-  }
-
-  .pricing_plan_table {
-      overflow-x: scroll
-  }
-
-  .four_btns_pricing_plan div {
-      min-width: 200px
-  }
-
-  .four_btns_pricing_plan {
-      gap: 3rem
-  }
+  
 
   .google_seo_cont {
       flex-wrap: wrap
@@ -3349,29 +3335,8 @@ nav ul li a {
       width: 100%
   }
 
-  .explore_website_title h3 {
-      font-size: 20px
-  }
-
-  .explore_website_title h2 {
-      font-size: 30px
-  }
-
-  .explore_website_cards .swiper-slide {
-      width: 100%
-  }
-
-  .explore_website_card {
-      height: auto
-  }
-
-  .explore_website_card img {
-      height: 370px
-  }
-
-  .video_content h2 {
-      font-size: 15px
-  }
+ 
+ 
 
   .customer_sat_cont {
       flex-direction: column
@@ -3391,25 +3356,7 @@ nav ul li a {
       margin-top: 2rem
   }
 
-  .footer_title_img img {
-      width: 60%
-  }
-
-  .footer_title_img h4 {
-      font-size: 20px
-  }
-
-  .footer_cont h3,.footer_title_img h4 span {
-      font-size: 22px
-  }
-
-  .footer_cont h2 {
-      font-size: 30px
-  }
-
-  .footer_copyright {
-      font-size: 13px
-  }
+  
 }
 
 @media screen and (max-width: 500px) {

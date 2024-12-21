@@ -1,4 +1,5 @@
 
+import { useEffect } from 'react';
 import Header from "../components/Header";
 import WhyChoseUs from "./WhyChoseUs";
 import "@/styles/globals.css";
@@ -12,11 +13,21 @@ import EcomRise from "./EcomRise";
 import SeoSection from "./SeoSection";
 import MobileFirst from "./MobileFirst";
 import CustomerReview from "./CustomerReview";
-
+import SmoothScrollerProvider from "../components/ScrollContext";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    const scrollToTopBtn = document.querySelector('.scroll_to_top_btn');
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }, []);
   return <>
   <Header/>
+  <SmoothScrollerProvider>
+
+
     <Component {...pageProps} />
     <WhyChoseUs/>
     <StunningDemos/>
@@ -33,14 +44,10 @@ export default function App({ Component, pageProps }) {
         <div class="light_skew_hover">
           <div class="effect_parent"></div>
           <div class="light_skew">
-            <svg stroke="currentcolor" fill="none" stroke-width="2"
-            viewbox="0 0 24 24" aria-hidden="true" height="1em"
-            width="1em" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" d=
-            "M5 11l7-7 7 7M5 19l7-7 7 7"></path></svg>
+      <HiOutlineChevronDoubleUp/>
           </div>
         </div>
       </div>
-   
+      </SmoothScrollerProvider>
   </>
 }

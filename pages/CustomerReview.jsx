@@ -3,7 +3,7 @@ import React from 'react'
 const CustomerReview = () => {
   return (
     <>
-     <div class="customer_satisfaction">
+     <div class="customer_satisfaction" id='customerSatisfactions' >
         <div class="container">
           <div class="customer_sat_cont">
             <div class="bg_blur_shadow"></div>
@@ -15,7 +15,7 @@ const CustomerReview = () => {
               Youtube community or external resources such as
               documents, video guides, etc.</p>
               <div class="support_team">
-                <img src="/img/coder.jpg" alt="" />
+                <img src="/img/profile01.webp" alt="" />
                 <div>
                   <h3>Ahammed Musa</h3>
                   <h4>5000 + Subscribers</h4>
@@ -60,12 +60,12 @@ const CustomerReview = () => {
               </div>
               <div type="button" class="light_skew_hover">
                 <div class="effect_parent"></div><a class=
-                "light_skew" href="/"><span class="cta_text">See
+                "light_skew" href="#customerSatisfactions"><span class="cta_text">See
                 Real Reviews</span></a>
               </div>
             </div>
             <div class="right_customer_satis"><img src=
-            "/img/cus.jpg" alt="" /></div>
+            "/img/customer_satisfation.png" alt="" /></div>
           </div>
         </div>
       </div>

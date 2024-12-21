@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa6";
 const EcomRise = () => {
   return (
     <>  
-    <div class="ecomrise">
+    <div class="ecomrise" id='idecomrise'>
         <div class="container">
           <div class="ecomrise_cont">
             <div class="left_ecomrise">
@@ -163,7 +163,7 @@ const EcomRise = () => {
               </ul>
               <div type="button" class="light_skew_hover">
                 <div class="effect_parent"></div><a class=
-                "light_skew" href="/"><span class=
+                "light_skew" href="#idecomrise"><span class=
                 "cta_text">Install EcomRise Free</span></a>
               </div>
             </div>
