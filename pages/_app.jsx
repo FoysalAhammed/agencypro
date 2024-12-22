@@ -14,6 +14,7 @@ import SeoSection from "./SeoSection";
 import MobileFirst from "./MobileFirst";
 import CustomerReview from "./CustomerReview";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import ScrollProvider from '@/components/ScrollContext';
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     const scrollToTopBtn = document.querySelector('.scroll_to_top_btn');
@@ -23,6 +24,7 @@ export default function App({ Component, pageProps }) {
   }, []);
   return <>
   <Header/>
+  <ScrollProvider>
     <Component {...pageProps} />
     <WhyChoseUs/>
     <StunningDemos/>
@@ -43,5 +45,6 @@ export default function App({ Component, pageProps }) {
           </div>
         </div>
       </div>
+      </ScrollProvider>
   </>
 }
